@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stock_market_background"
+    tools:context=".CompanyActivity">
+
+    <EditText
+        android:id="@+id/openPrice"
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:foregroundGravity="top"
+        android:gravity="top"
+        android:inputType="numberDecimal"
+        android:text="2,122.56"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphView" />
+
+    <EditText
+        android:id="@+id/LUPriceBandLow"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="136dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:foregroundGravity="top"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:paddingTop="0dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp"
+        android:text="1909.85"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/offerPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="152dp"
+        android:text="L/U PRICE BAND"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/graphView" />
+
+    <SeekBar
+        android:id="@+id/LUPriceBandSeekBar"
+        android:layout_width="212dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="156dp"
+        android:progressDrawable="@drawable/custom_seekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/offerPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <EditText
+        android:id="@+id/LUPriceBandHigh"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="136dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:foregroundGravity="top"
+        android:gravity="center|top"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="20dp"
+        android:text="2334.25"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="152dp"
+        android:text="Open Price"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphView" />
+
+    <EditText
+        android:id="@+id/previousClose"
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:foregroundGravity="top"
+        android:gravity="top"
+        android:inputType="numberDecimal"
+        android:text="2116.35"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphView" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="84dp"
+        android:text="52 WK LOW/HIGH"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/graphView" />
+
+    <EditText
+        android:id="@+id/fiftyTwoWkHigh"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:foregroundGravity="top"
+        android:gravity="center|top"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="20dp"
+        android:text="2,198.00"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <SeekBar
+        android:id="@+id/fiftyTwoWkSeekBar"
+        android:layout_width="212dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="88dp"
+        android:progressDrawable="@drawable/custom_seekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/offerPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:text="Previous Close"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphView" />
+
+    <EditText
+        android:id="@+id/fiftyTwoWkLow"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:foregroundGravity="top"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:paddingTop="0dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp"
+        android:text="867.43"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/offerPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <EditText
+        android:id="@+id/towadysHigh"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:foregroundGravity="top"
+        android:gravity="center|top"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="20dp"
+        android:text="2,157.00"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <EditText
+        android:id="@+id/towadysLow"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:foregroundGravity="top"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:paddingTop="0dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="20dp"
+        android:text="2,089.25"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/offerPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <SeekBar
+        android:id="@+id/towadysSeekBar"
+        android:layout_width="212dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:progressDrawable="@drawable/custom_seekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/offerPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="18dp"
+        android:text="TODAY'S LOW/HIGH"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/graphView" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="Offer Price"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphView" />
+
+    <EditText
+        android:id="@+id/offerPrice"
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:foregroundGravity="top"
+        android:gravity="top"
+        android:inputType="numberDecimal"
+        android:text="2116.35"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphView" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphView"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+
+    <TextView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="106dp"
+        android:background="@color/firstSpace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="105dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/main2" />
+
+    <EditText
+        android:id="@+id/main"
+        android:layout_width="109dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="37,762.56"
+        android:textColor="@android:color/background_light"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="105dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="84dp"
+        android:text="14 Aug, 2020 2:10"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="112dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:shadowColor="@android:color/background_light"
+        android:text="Overview"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

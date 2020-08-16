@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Stock Market</string>
+
+    <!--
+    <string-array name="names">
+        <item> NIFTY </item>
+        <item> SENSEX </item>
+    </string-array>
+    -->
+</resources>

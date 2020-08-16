@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stock_market_background"
+    tools:context=".SelectionActivity">
+
+    <TextView
+        android:id="@+id/EicherMotorsTextView"
+        android:layout_width="124dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="144dp"
+        android:onClick="StockPage"
+        android:text="Eicher Motors"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/CiplaTextView"
+        android:layout_width="124dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="80dp"
+        android:onClick="StockPage"
+        android:text="Cipla"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/TataSteelTextView"
+        android:layout_width="124dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="112dp"
+        android:onClick="StockPage"
+        android:text="Tata Steel"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="200dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="416dp"
+        android:paddingLeft="10sp"
+        android:text="Companies"
+        android:textColor="@android:color/background_light"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AshokLeylandTextView"
+        android:layout_width="171dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="48dp"
+        android:onClick="StockPage"
+        android:text="Ashok Leyland"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/RelianceTextView"
+        android:layout_width="124dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:onClick="StockPage"
+        android:text="Reliance"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="166dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="268dp"
+        android:paddingLeft="10sp"
+        android:text="Indices"
+        android:textColor="@android:color/background_light"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SensexTextView"
+        android:layout_width="124dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:onClick="StockPage"
+        android:text="SENSEX"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/NiftyTextView"
+        android:layout_width="124dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="48dp"
+        android:onClick="StockPage"
+        android:text="NIFTY"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="364dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>
